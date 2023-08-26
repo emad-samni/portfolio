@@ -7,24 +7,37 @@ export interface IPortofolioItem {
   date?: string;
   type?: string;
   id: string;
+  desc: string;
   name?: string;
   src?: string;
 }
 
 interface PortofolioListProps {
   contents: IPortofolioItem[];
+  show_form_projects: Boolean;
 }
 
 const PortofolioList: FunctionComponent<PortofolioListProps> = (props) => {
-  const { contents } = props;
+  const { contents, show_form_projects } = props;
 
   const { handleShowPortofolioViewer } = useLogic();
 
   return (
-    <ul className="js-filter uk-child-width-1-1 uk-child-width-1-2@m uk-child-width-1-3@l uk-text-center uk-grid" data-uk-grid>
+    <ul className="js-filter uk-child-width-1-1 uk-child-width-1-1@m uk-child-width-1-1@l uk-text-center">
       {contents.map((item) => (
         <li key={item.date} data-date={item.date} data-stack={item.type}>
-          <ExperienceCard src={item.src} name={item.name} title={item.type} onClick={() => handleShowPortofolioViewer(item.id)} />
+          <ExperienceCard
+            item_id={item.id}
+            src={item.src}
+            name={item.name}
+            title={item.desc}
+            onClick={() =>
+              handleShowPortofolioViewer(
+                item.id,
+                show_form_projects ? true : false
+              )
+            }
+          />
         </li>
       ))}
     </ul>

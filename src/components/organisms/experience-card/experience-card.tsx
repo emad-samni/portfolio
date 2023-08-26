@@ -6,39 +6,47 @@ import { ThemeContext } from "../../providers/theme-provider";
 
 interface ExperienceCardProps {
   onClick?: () => void;
+  item_id?: string;
   title?: string;
   src?: string;
   name?: string;
 }
 
 const ExperienceCard: FunctionComponent<ExperienceCardProps> = (props) => {
-  const { onClick, name, src, title } = props;
+  const { onClick, item_id, name, src, title } = props;
 
   const theme = useContext(ThemeContext);
 
-  const backgroundColorClass = theme?.theme === "dark" ? "uk-overlay-primary" : "uk-overlay-default";
+  const backgroundColorClass =
+    theme?.theme === "dark" ? "uk-overlay-primary" : "uk-overlay-default";
+
+  const aligh =
+    parseInt(item_id!) % 2 !== 0
+      ? "uk-card-media-left uk-cover-container"
+      : "uk-flex-last@s uk-card-media-right uk-cover-container";
+
+  const textClass = theme?.theme === "dark" ? "uk-light" : "";
 
   const { playHoverSound } = useSoundEffects();
 
   return (
-    <div style={{ width: 450 }} className="uk-card uk-padding-small uk-border-rounded uk-overflow-hidden pointer uk-transition-toggle uk-inline-clip uk-box-shadow-small">
-      <img alt="resource" src={src} className="uk-transition-scale-up uk-transition-opaque" style={{ height: 250, width: "100%", objectFit: "cover" }} />
-      <div className={`uk-transition-fade uk-position-cover uk-overlay ${backgroundColorClass} `}>
-        <div className="uk-position-top-left" style={{ left: 20, top: 0 }}>
-          <div className="uk-label uk-text-capitalize uk-transition-slide-top-small ">{title}</div>
-        </div>
-        <div className="uk-text-bold  uk-position-center uk-text-capitalize uk-transition-slide-bottom-small text-big">{name}</div>
-        <div className="uk-position-bottom-left" style={{ bottom: 25, left: 25 }}>
-          <a
-            onClick={() => {
-              onClick?.();
-              playHoverSound();
-            }}
-            className="uk-icon-button uk-margin-small-right "
-            style={{ width: 55, height: 55 }}
-          >
-            <FaEye size={25} />
-          </a>
+    <div
+      className={`uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-flex ${backgroundColorClass} `}
+      uk-grid
+    >
+      <div className={`${aligh}`}>
+        <img src={src} alt="resource" style={{ height: "400px" }} />
+      </div>
+      <div>
+        <div className="uk-card-body">
+          <h3 className={`${textClass}`}> {name}</h3>
+          <p className={`${textClass}`} style={{ whiteSpace: "pre-line" }}>
+            {title}.
+          </p>
+
+          <button className="uk-button uk-button-danger" onClick={onClick}>
+            more details
+          </button>
         </div>
       </div>
     </div>

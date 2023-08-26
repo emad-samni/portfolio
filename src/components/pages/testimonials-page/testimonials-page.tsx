@@ -2,20 +2,44 @@ import { FunctionComponent } from "react";
 import { useTranslation } from "react-i18next";
 import { FaExclamationTriangle } from "react-icons/fa";
 import { capitalizeFirstLetter } from "../../../utils/text/text-manipulation";
-
+import profileConfig from "../../../configs/profile.config";
+import { generateAnimationDelayStyle } from "../../../utils/animation/animation";
+import SectionHeader from "../../molecules/contact-me-header/section-header";
+import PortofolioList from "../../organisms/portofolio-list/portofolio-list";
+import PortofolioTemplate from "../../templates/portofolio-template/portofolio-template";
 interface TestimonialsPageProps {}
 
 const TestimonialsPage: FunctionComponent<TestimonialsPageProps> = () => {
+  const { volunteering } = profileConfig;
+
   const { t } = useTranslation();
 
+  const items = volunteering.map((item) => ({
+    ...item,
+    src: item?.data?.[0].thumb,
+  }));
+
   return (
-    <div className="uk-flex uk-flex-center uk-flex-middle" style={{ height: "100vh" }}>
-      <div className="uk-text-center">
-        <FaExclamationTriangle size={150} style={{ marginBottom: 8 }} />
-        <div className="text-huge uk-text-bolder uk-text-uppercase">{t("coming_soon")}</div>
-        <div className="uk-text-large">{capitalizeFirstLetter(t("this_page_is_under_construction"))} </div>
-      </div>
-    </div>
+    <PortofolioTemplate
+      tagElement={
+        <div
+          className="animate__animated animate__fadeInUp"
+          style={{ ...generateAnimationDelayStyle(0.5) }}
+        >
+          <SectionHeader>{t("testimonials")}</SectionHeader>
+        </div>
+      }
+      content={
+        <div
+          className="animate__animated animate__fadeIn uk-display-inline-block uk-width-1-1"
+          style={{ ...generateAnimationDelayStyle(1.1) }}
+        >
+          <div>
+            <PortofolioList show_form_projects={false} contents={items} />
+          </div>
+        </div>
+      }
+    />
   );
 };
 

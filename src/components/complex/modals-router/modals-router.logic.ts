@@ -7,12 +7,16 @@ export const useLogic = () => {
 
   const [searchParamsFromRoute] = useSearchParams();
 
-  const showAboutMeModal = searchParamsFromRoute.get("about_me_modal") === "show";
+  const showAboutMeModal =
+    searchParamsFromRoute.get("about_me_modal") === "show";
 
   const ProjectId = searchParamsFromRoute.get("project_id");
+  const projects_view =
+    searchParamsFromRoute.get("projects_view") == "true" ? true : false;
 
   const handlePortofolioClose = () => {
     searchParamsFromRoute.delete("project_id");
+    searchParamsFromRoute.delete("projects_view");
     navigate({
       pathname: location.pathname,
       search: searchParamsFromRoute.toString(),
@@ -24,5 +28,11 @@ export const useLogic = () => {
     navigate(-1);
   };
 
-  return { showAboutMeModal, ProjectId, handleCloseAboutMeModal, handlePortofolioClose };
+  return {
+    showAboutMeModal,
+    ProjectId,
+    handleCloseAboutMeModal,
+    handlePortofolioClose,
+    projects_view,
+  };
 };

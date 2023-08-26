@@ -6,11 +6,23 @@ import { useLogic } from "./modals-router.logic";
 interface ModalsRouterProps {}
 
 const ModalsRouter: FunctionComponent<ModalsRouterProps> = () => {
-  const { ProjectId, handleCloseAboutMeModal, handlePortofolioClose, showAboutMeModal } = useLogic();
+  const {
+    ProjectId,
+    handleCloseAboutMeModal,
+    handlePortofolioClose,
+    showAboutMeModal,
+    projects_view,
+  } = useLogic();
+  console.log(projects_view);
 
   return (
     <>
-      <PortofolioViewer projectId={ProjectId} open={!!ProjectId} onClose={handlePortofolioClose} />
+      <PortofolioViewer
+        projects_view={projects_view}
+        projectId={ProjectId}
+        open={!!ProjectId}
+        onClose={handlePortofolioClose}
+      />
       <AboutMeModal open={showAboutMeModal} onClose={handleCloseAboutMeModal} />
     </>
   );

@@ -50,6 +50,22 @@ export interface ProfileConfigs {
     type: string;
     name: string;
     id: string;
+    desc: string;
+    data?: {
+      id: string;
+      size: string;
+      src: string;
+      thumb: string;
+      head?: string;
+      paragraph?: string;
+    }[];
+  }[];
+  volunteering: {
+    date: string;
+    type: string;
+    name: string;
+    id: string;
+    desc: string;
     data?: {
       id: string;
       size: string;
@@ -63,11 +79,18 @@ export interface ProfileConfigs {
   project_filters: {
     "data-stack": {
       trigger: "filter";
-      data: [{ label: "Front-End"; value: "frontend" }, { label: "Back-End"; value: "backend" }, { label: "Full-Stack"; value: "fullstack" }];
+      data: [
+        { label: "Front-End"; value: "frontend" },
+        { label: "Back-End"; value: "backend" },
+        { label: "Full-Stack"; value: "fullstack" }
+      ];
     };
     "data-date": {
       trigger: "sort";
-      data: [{ label: "Newest"; value: "desc" }, { label: "Oldest"; value: "asc" }];
+      data: [
+        { label: "Newest"; value: "desc" },
+        { label: "Oldest"; value: "asc" }
+      ];
     };
   };
 }

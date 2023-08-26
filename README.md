@@ -4,7 +4,7 @@ This is a React application that allows you to showcase your portfolio data. Fol
 
 ## Prerequisites
 
-Before you start, make sure you have Node.jsand npm installed on your system.
+Before start, make sure having Node.js and npm installed on system.
 
 ### Installation
 
@@ -271,4 +271,4 @@ education: [
 
 ## Additional Info
 
-I use devicon for the development icons, so you should import them before you use it
+devicon library is used for the development icons, they should be imported before use it

@@ -27,7 +27,20 @@ const PortofolioViewer: FunctionComponent<PortofolioViewerProps> = (props) => {
       subHtml: `<div class="lightGallery-captions"><h4>${item.head}</h4><p>${item.paragraph}</p></div>`,
     })) ?? [];
 
-  return <LightGallery onAfterClose={onClose} closeOnTap={false} zoomFromOrigin={false} dynamicEl={mappedItems} dynamic={true} toggleThumb={true} onInit={onInit} speed={500} allowMediaOverlap={true} plugins={[lgThumbnail, lgZoom, lgFullscreen, lgShare, lgAutoplay]} />;
+  return (
+    <LightGallery
+      onAfterClose={onClose}
+      closeOnTap={false}
+      zoomFromOrigin={false}
+      dynamicEl={mappedItems}
+      dynamic={true}
+      toggleThumb={true}
+      onInit={onInit}
+      speed={500}
+      allowMediaOverlap={true}
+      plugins={[lgThumbnail, lgZoom, lgFullscreen, lgShare, lgAutoplay]}
+    />
+  );
 };
 
 export default PortofolioViewer;
