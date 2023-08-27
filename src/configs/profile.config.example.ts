@@ -1144,8 +1144,8 @@ Abschließend haben wir das Wasserfall-Modell verwendet, um das Projekt zu verwa
       data: [
         {
           id: "1",
-          src: "/imgs/projects/6/1.png",
-          thumb: "/imgs/projects/6/1.png",
+          src: "/imgs/projects/6/2.png",
+          thumb: "/imgs/projects/6/2.png",
           head_en: "",
           head_de: "",
           paragraph_en: "",
