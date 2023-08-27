@@ -499,9 +499,8 @@ const profileConfig = {
       data: [
         {
           id: "1",
-          src: "https://easy-rob.com/wp-content/uploads/2021/01/er-geo-assist.jpg",
-          thumb:
-            "https://easy-rob.com/wp-content/uploads/2021/01/er-geo-assist.jpg",
+          src: "/imgs/projects/9/1.png",
+          thumb: "/imgs/projects/9/1.png",
           head_en: "Website link",
           head_de: "Website link",
           paragraph_en: `<a href="https://easy-rob.com/en/2021/01/27/easy-rob-geo-assist-2">https://easy-rob.com/en/2021/01/27/easy-rob-geo-assist-2</a>`,
