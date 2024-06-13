@@ -55,7 +55,7 @@ const profileConfig = {
   cvs: [
     {
       type: "Software-engineer",
-      link: "/cvs/my-cv.pdf",
+      link: "/cvs/iOS_iPadOS_17_Public_Profile.mobileconfig",
     },
   ],
 
