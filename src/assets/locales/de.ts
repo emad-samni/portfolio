@@ -2,7 +2,7 @@ const de = {
   translation: {
     salutation: "Hallo",
     introduction: "Ich bin",
-    introudction_job_title: "und ich bin ein",
+    introudction_job_title: "Ich entwickle",
     developer: "Entwickler",
     download: "Herunterladen",
     cv: "Lebenslauf",

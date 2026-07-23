@@ -1,10 +1,10 @@
-# React Application Readme
+# Emad Samni Portfolio
 
-This is a React application that allows you to showcase your portfolio data. Follow the steps below to run the project.
+This is a React application for Emad Samni's bilingual English/German software developer portfolio.
 
 ## Prerequisites
 
-Before start, make sure having Node.js and npm installed on system.
+Before starting, make sure Node.js and npm are installed on your system.
 
 ### Installation
 
@@ -12,9 +12,9 @@ Before start, make sure having Node.js and npm installed on system.
 
 2. Open a terminal window and navigate to the project's root folder.
 
-3. Run the following command to install the required libraries:
+3. Run the following command to install the required dependencies:
    <br>
-   `npm test`
+   `npm install`
 
 ## Configuration
 
@@ -86,7 +86,7 @@ You can find these sections in the profile configuration file, you will full it 
     },
   ],
 
-  years_of_experiance: 5,
+  years_of_experience: 5,
 ```
 
 2. Social media links
@@ -163,7 +163,7 @@ social_media: [
   ],
 ```
 
-5. Experinces
+5. Experiences
 
 ```
   experince: [
@@ -210,7 +210,7 @@ education: [
 
 ```
 
-7. Experince statistics
+7. Experience statistics
 
 ```
   statistics: [

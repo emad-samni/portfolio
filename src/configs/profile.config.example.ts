@@ -16,7 +16,6 @@ import javascriptIcon from "devicon/icons/javascript/javascript-plain.svg";
 import QT from "devicon/icons/qt/qt-original.svg";
 import circleciIcon from "devicon/icons/circleci/circleci-plain.svg";
 import dockerIcon from "devicon/icons/docker/docker-plain.svg";
-import graphqlIcon from "devicon/icons/graphql/graphql-plain.svg";
 import gitIcon from "devicon/icons/git/git-plain.svg";
 import mysqlIcon from "devicon/icons/mysql/mysql-plain.svg";
 import Postgresql from "devicon/icons/postgresql/postgresql-original.svg";
@@ -40,22 +39,22 @@ const profileConfig = {
   email: "emad.samni.it@gmail.com",
 
   bio_en:
-    "As a seasoned software engineer with over 4 years of experience specializing in Python-based backend development, I have developed a passion for leveraging my technical expertise and project management skills to drive innovation and deliver high-quality software solutions. My dedication to continuous learning has enabled me to expand my knowledge and improve both my technical and soft skills. Through my experience in advanced software development environments, I have gained a deep understanding of what it takes to deliver successful projects. I am excited to continue applying my skills and experience to new challenges, and I am confident in my ability to make valuable contributions to any organization.",
+    "Software developer based in Darmstadt, Germany, with 5+ years of experience building web applications, backend systems, APIs, desktop tools, Docker-based deployments, and microservice architectures. I help teams design reliable software, modernize existing systems, fix complex issues, and deliver practical solutions with clean, maintainable code.",
   bio_de:
-    "Als erfahrener Softwareingenieur mit über 4 Jahren Erfahrung, der sich auf die Entwicklung von Python-basierten Backends spezialisiert hat, habe ich eine Leidenschaft dafür entwickelt, mein technisches Fachwissen und meine Projektmanagementfähigkeiten einzusetzen, um Innovationen voranzutreiben und hochwertige Softwarelösungen zu liefern. Meine Hingabe zum kontinuierlichen Lernen hat es mir ermöglicht, mein Wissen zu erweitern und sowohl meine technischen als auch meine sozialen Fähigkeiten zu verbessern. Durch meine Erfahrungen in fortschrittlichen Softwareentwicklungsumgebungen habe ich ein tiefes Verständnis dafür entwickelt, was es braucht, um erfolgreiche Projekte umzusetzen. Ich freue mich darauf, meine Fähigkeiten und Erfahrungen in neuen Herausforderungen weiterhin einzusetzen, und ich bin zuversichtlich, wertvolle Beiträge zu jeder Organisation leisten zu können.",
+    "Softwareentwickler mit Sitz in Darmstadt, Deutschland, mit mehr als 5 Jahren Erfahrung in der Entwicklung von Webanwendungen, Backend-Systemen, APIs, Desktop-Tools, Docker-basierten Deployments und Microservice-Architekturen. Ich unterstütze Teams dabei, zuverlässige Software zu entwickeln, bestehende Systeme zu modernisieren, komplexe Probleme zu lösen und praxistaugliche Lösungen mit sauberem, wartbarem Code umzusetzen.",
 
   skills_introduction_en:
-    "As I progressed in my career as a software engineer and worked on numerous small and medium-sized projects, I acquired a diverse set of skills from these experiences.",
+    "My strongest areas are backend development, Docker, microservices, web applications, desktop software, databases, and practical system integration.",
   skills_introduction_de:
-    "Im Laufe meiner Karriere als Softwareingenieur und durch die Arbeit an zahlreichen kleinen und mittelgroßen Projekten habe ich eine vielfältige Palette an Fähigkeiten erworben.",
+    "Meine stärksten Bereiche sind Backend-Entwicklung, Docker, Microservices, Webanwendungen, Desktop-Software, Datenbanken und praktische Systemintegration.",
 
-  professions_en: ["Software engineer", "Python Developer"],
-  professions_de: ["Softwareingenieur", "Python-Entwickler"],
+  professions_en: ["Software Developer", "Backend Developer", "Docker & Microservices Engineer"],
+  professions_de: ["Softwareentwickler", "Backend-Entwickler", "Docker- & Microservices-Entwickler"],
 
   cvs: [
     {
-      type: "Software-engineer",
-      link: "/cvs/iOS_iPadOS_17_Public_Profile.mobileconfig",
+      type: "Software Engineer CV",
+      link: "/cvs/my-cv.pdf",
     },
   ],
 
@@ -121,10 +120,10 @@ const profileConfig = {
     {
       key_en: "address",
       key_de: "Adresse",
-      value_en: "Damascus,Syria",
-      value_de: "Damaskus, Syrien",
+      value_en: "Darmstadt, Germany",
+      value_de: "Darmstadt, Deutschland",
     },
-    { key_en: "phone", key_de: "Telefon", value: "+963935702780" },
+    { key_en: "availability", key_de: "Verfügbarkeit", value: "20 hours/week" },
     {
       key_en: "Email",
       key_de: "E-Mail",
@@ -140,8 +139,8 @@ const profileConfig = {
     {
       key_en: "Languages",
       key_de: "Sprachen",
-      value_en: "English(C1), Arabic(C1)",
-      value_de: "Englisch(C1), Arabisch(C1)",
+      value_en: "Arabic(native), English(C1), German(A1+)",
+      value_de: "Arabisch(Muttersprache), Englisch(C1), Deutsch(A1+)",
     },
   ],
 
@@ -149,7 +148,7 @@ const profileConfig = {
     {
       icon: FaBriefcase,
       title_en: "Senior Software Engineer",
-      title_de: "Front-End-Entwickler",
+      title_de: "Senior Softwareentwickler",
       time_en: "Nov/2020-Present",
       time_de: "2020-heute",
       description_list_en: [
@@ -171,8 +170,8 @@ const profileConfig = {
     },
     {
       icon: FaBriefcase,
-      title_en: "Mid-senior software Enginner",
-      title_de: "Web-Entwickler",
+      title_en: "Mid-Senior Software Engineer",
+      title_de: "Softwareentwickler",
       time_en: "April/2020-October/2021",
       time_de: "2017-heute",
       description_list_en: [
@@ -192,9 +191,9 @@ const profileConfig = {
     },
     {
       icon: FaBriefcase,
-      title_en: "software Enginner",
-      title_de: "Web-Entwickler",
-      time_en: "January/2018-Febuary/2020",
+      title_en: "Software Engineer",
+      title_de: "Softwareentwickler",
+      time_en: "January/2018-February/2020",
       time_de: "2017-heute",
       description_list_en: [
         "Developing many platforms that provide entertainment and purchasing services to clients.",
@@ -210,7 +209,7 @@ const profileConfig = {
   education: [
     {
       icon: "FaGraduationCap",
-      title_en: "Master in web sciences",
+      title_en: "Master in Web Science",
       title_de: "Master in Webwissenschaften",
 
       time: "April 2020 - till present",
