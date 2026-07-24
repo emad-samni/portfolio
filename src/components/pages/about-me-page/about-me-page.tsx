@@ -25,14 +25,14 @@ const AboutMePage: FunctionComponent<AboutMePageProps> = () => {
   const responsiveFullWidthClass = isTabletOrMobile ? "uk-width-1-1" : "";
 
   return (
-    <div className="uk-flex uk-flex-middle uk-animation-toggle" style={{ minHeight: "100vh" }}>
-      <div className={`uk-margin-auto uk-container uk-container-xlarge ${containerResponsiveMarginClass}`}>
+    <div className="uk-flex uk-flex-middle uk-animation-toggle portfolio-page-content" style={{ minHeight: "100vh" }}>
+      <div className={`uk-margin-auto uk-container uk-container-xlarge portfolio-section-container ${containerResponsiveMarginClass}`}>
         <div className={` uk-flex ${containerResponsiveClass}`}>
           <div className="uk-width-1-1 uk-width-1-2@m">
             <div className="uk-margin animate__animated animate__fadeInUp" style={{ ...generateAnimationDelayStyle(0.5) }}>
-              <SectionHeader>
+              <div className="portfolio-section-header"><SectionHeader>
                 {t("about")} {t("me")}
-              </SectionHeader>
+              </SectionHeader></div>
             </div>
             <div>
               <HeaderParagraph paragraphProps={{ className: " animate__animated animate__fadeInUp", style: { ...generateAnimationDelayStyle(0.8) } }} paragraph={bio} />

@@ -1,0 +1,82 @@
+html, body, #root {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 650px) {
+  .portfolio-page-content {
+    padding: 88px 16px 40px;
+    min-height: auto !important;
+  }
+
+  .portfolio-section-container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .portfolio-section-header {
+    text-align: center;
+  }
+
+  .portfolio-section-header .text-big {
+    font-size: 2rem !important;
+    line-height: 1.15 !important;
+  }
+
+  .portfolio-filter-bar {
+    width: 100%;
+    margin-top: 16px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+  }
+
+  .portfolio-filter-bar .uk-subnav {
+    justify-content: center;
+    row-gap: 8px;
+  }
+
+  .portfolio-card {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .portfolio-card-image {
+    width: 100% !important;
+  }
+
+  .portfolio-card-image img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 260px;
+    object-fit: cover;
+  }
+
+  .portfolio-card .uk-card-body {
+    padding: 24px 18px;
+  }
+
+  .portfolio-card p {
+    font-size: 0.95rem;
+    line-height: 1.55;
+    overflow-wrap: anywhere;
+  }
+
+  .contact-form-root {
+    max-width: 100% !important;
+    margin-left: 0 !important;
+  }
+
+  .contact-form-root input,
+  .contact-form-root textarea {
+    width: 100% !important;
+  }
+}

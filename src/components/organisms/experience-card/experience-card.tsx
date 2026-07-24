@@ -31,11 +31,11 @@ const ExperienceCard: FunctionComponent<ExperienceCardProps> = (props) => {
 
   return (
     <div
-      className={`uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-flex ${backgroundColorClass} `}
+      className={`uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-flex portfolio-card ${backgroundColorClass} `}
       uk-grid
     >
-      <div className={`${aligh}`}>
-        <img src={src} alt="resource" style={{ height: "400px" }} />
+      <div className={`${aligh} portfolio-card-image`}>
+        <img src={src} alt="resource" style={{ height: "400px", objectFit: "cover", width: "100%" }} />
       </div>
       <div>
         <div className="uk-card-body">

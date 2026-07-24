@@ -15,7 +15,7 @@ const ContactMePage: FunctionComponent<ContactMePageProps> = () => {
 
   const { t } = useTranslation();
 
-  const responsiveClass = isTabletOrMobile ? "uk-flex uk-flex-center" : "";
+  const responsiveClass = isTabletOrMobile ? "uk-flex uk-flex-column uk-flex-center uk-text-center" : "";
 
   return (
     <ContactMeTemplate
@@ -24,11 +24,9 @@ const ContactMePage: FunctionComponent<ContactMePageProps> = () => {
           <div className="animate__animated animate__fadeInUp" style={{ ...generateAnimationDelayStyle(0.5) }}>
             <ContactMeHeader>{t("get_in_touch")}</ContactMeHeader>
           </div>
-          {!isTabletOrMobile && (
-            <div className="animate__animated animate__fadeInUp" style={{ ...generateAnimationDelayStyle(0.8) }}>
-              <ContactMeLetsTalkPart />
-            </div>
-          )}
+          <div className="animate__animated animate__fadeInUp" style={{ ...generateAnimationDelayStyle(0.8) }}>
+            <ContactMeLetsTalkPart />
+          </div>
         </div>
       }
       secondSection={

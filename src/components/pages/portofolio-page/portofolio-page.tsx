@@ -33,7 +33,7 @@ const Portofolio: FunctionComponent<PortofolioProps> = () => {
         }
         filter={
           <div
-            className="uk-flex-center animate__animated animate__fadeInUp uk-grid-small uk-grid-divider uk-child-width-auto uk-grid"
+            className="portfolio-filter-bar uk-flex-center animate__animated animate__fadeInUp uk-grid-small uk-grid-divider uk-child-width-auto uk-grid"
             style={{ ...generateAnimationDelayStyle(0.8) }}
             data-uk-grid
           >

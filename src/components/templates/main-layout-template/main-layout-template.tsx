@@ -15,7 +15,7 @@ const MainLayoutTemplate: FunctionComponent<MainLayoutTemplateProps> = (props) =
   const lightText = theme?.theme === "dark" ? "uk-light" : "";
 
   return (
-    <div style={{ minHeight: "100vh" }} className={`uk-width-1-1 ${backgroundColorClass} ${lightText}`}>
+    <div style={{ minHeight: "100vh" }} className={`uk-width-1-1 portfolio-page-shell ${backgroundColorClass} ${lightText}`}>
       {children}
     </div>
   );
