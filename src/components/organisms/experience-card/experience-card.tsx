@@ -41,7 +41,7 @@ const ExperienceCard: FunctionComponent<ExperienceCardProps> = (props) => {
         <div className="uk-card-body">
           <h3 className={`${textClass}`}> {name}</h3>
           <p className={`${textClass}`} style={{ whiteSpace: "pre-line" }}>
-            {title}.
+            {title}
           </p>
 
           <button className="uk-button uk-button-danger" onClick={onClick}>
