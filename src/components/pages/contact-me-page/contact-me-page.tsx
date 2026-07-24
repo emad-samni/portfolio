@@ -32,7 +32,7 @@ const ContactMePage: FunctionComponent<ContactMePageProps> = () => {
         </div>
       }
       secondSection={
-        <div className="animate__animated animate__fadeIn" style={{ ...generateAnimationDelayStyle(1.1) }}>
+        <div className="animate__animated animate__fadeIn uk-width-1-1" style={{ ...generateAnimationDelayStyle(1.1) }}>
           <ContactMeForm />
           <div className={`uk-margin-top ${responsiveClass}`}>
             <SocialLinksList />

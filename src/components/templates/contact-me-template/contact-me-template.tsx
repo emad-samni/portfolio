@@ -12,8 +12,8 @@ const ContactMeTemplate: FunctionComponent<ContactMeTemplateProps> = (props) => 
   const { isTabletOrMobile } = useResponsive();
 
   const containerResponsiveClass = isTabletOrMobile ? "uk-flex-column" : "";
-  const firstSectionStyle = isTabletOrMobile ? { width: "100%" } : { flex: "1 1 55%", maxWidth: 780 };
-  const secondSectionStyle = isTabletOrMobile ? { width: "100%", marginTop: 40 } : { flex: "0 1 520px", minWidth: 460, maxWidth: 560 };
+  const firstSectionStyle = isTabletOrMobile ? { width: "100%" } : { flex: "1 1 48%", maxWidth: 720 };
+  const secondSectionStyle = isTabletOrMobile ? { width: "100%", marginTop: 40 } : { flex: "0 0 620px", width: 620, maxWidth: 620 };
 
   return (
     <div className="uk-flex uk-flex-middle" style={{ minHeight: "100vh" }}>

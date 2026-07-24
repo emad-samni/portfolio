@@ -15,8 +15,8 @@ const ContactMeForm: FunctionComponent<ContactMeFormProps> = () => {
   const { form, sent } = useLogic();
 
   const gridForm = [
-    { placeholder: capitalizeWords(t("your_name")), type: "text", size: "1-2", break: "m", name: "full_name" },
-    { placeholder: capitalizeWords(t("email_address")), type: "email", size: "1-2", break: "m", name: "email" },
+    { placeholder: capitalizeWords(t("your_name")), type: "text", size: "1-1", break: "s", name: "full_name" },
+    { placeholder: capitalizeWords(t("email_address")), type: "email", size: "1-1", break: "s", name: "email" },
     { placeholder: capitalizeWords(t("subject")), type: "subject", size: "1-1", break: "s", name: "subject" },
     { placeholder: capitalizeWords(t("message")), type: "textarea", size: "1-1", break: "s", name: "message" },
   ];
@@ -26,7 +26,7 @@ const ContactMeForm: FunctionComponent<ContactMeFormProps> = () => {
   const responsiveButtonContainerClass = isTabletOrMobile ? "uk-width-1-1" : "";
 
   return (
-    <div className="uk-grid-small uk-text-center uk-grid uk-width-1-1">
+    <div className="uk-grid-small uk-text-center uk-grid uk-width-1-1" style={{ maxWidth: 620, marginLeft: "auto" }}>
       {sent && (
         <div className="uk-width-1-1@s">
           <div className="animate__fadeIn animate__animated uk-alert-primary uk-display-inline-block uk-padding-small uk-border-rounded" uk-alert="">
