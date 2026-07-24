@@ -319,9 +319,9 @@ const profileConfig = {
       type: "backend",
       name: "agriBORA",
       desc_en:
-        "agriBORA is an agri-fintech company with a mission to transform agriculture in Africa by using digital tools and disruptive technologies combined with human touch. the goal is to de-risk smallholder agriculture, improve farm productivity and facilitate effective trading. building an end-to-end ecosystem around farmers, bringing farming inputs, financial services, and output markets closer to them in a way that makes the process affordable, convenient, and reliable for them and their business partners. in addition to be the preferred platform for smallholder farmers and their business partners to transact in a more affordable, efficient, transparent, and reliable way",
+        "Client problem: smallholder farmers and agriculture partners needed a more reliable digital platform for services, trading, and business workflows. My role: contributed to backend/API and microservice development, system integration, Docker-based deployment, and maintainable service architecture. Technologies/areas: backend services, APIs, Docker, microservices, databases, and workflow automation. Result: helped deliver a practical platform that supports agricultural services and business transactions at scale.",
       desc_de:
-        "agriBORA ist ein Agri-Fintech-Unternehmen mit der Mission, die Landwirtschaft in Afrika durch den Einsatz digitaler Werkzeuge und disruptiver Technologien in Verbindung mit persönlicher Betreuung zu transformieren. Das Ziel ist es, das Risiko für Kleinbauern zu verringern, die Produktivität auf den Farmen zu steigern und den Handel effektiver zu gestalten. Es wird eine umfassende End-to-End-Infrastruktur für Landwirte aufgebaut, die landwirtschaftliche Inputs, finanzielle Dienstleistungen und Absatzmärkte näher an sie heranführt, auf eine Weise, die den Prozess für sie und ihre Geschäftspartner bezahlbar, bequem und zuverlässig macht. Darüber hinaus strebt agriBORA an, die bevorzugte Plattform für Kleinbauern und ihre Geschäftspartner zu sein, um Transaktionen auf eine kostengünstigere, effizientere, transparentere und zuverlässigere Weise durchzuführen.",
+        "Kundenproblem: Kleinbauern und Partner im Agrarbereich benötigten eine zuverlässigere digitale Plattform für Dienstleistungen, Handel und Geschäftsprozesse. Meine Rolle: Mitarbeit an Backend/API-Entwicklung, Microservices, Systemintegration, Docker-basiertem Deployment und wartbarer Service-Architektur. Technologien/Bereiche: Backend-Services, APIs, Docker, Microservices, Datenbanken und Workflow-Automatisierung. Ergebnis: Unterstützung bei der Umsetzung einer praxistauglichen Plattform für Agrarservices und Geschäftstransaktionen.",
       id: "1",
       data: [
         {
@@ -340,9 +340,9 @@ const profileConfig = {
       type: "backend",
       name: "Nitrexo",
       desc_en:
-        "An E-learning platform, for Thermal/Mechanical engineers, powered by Chatbot & a web-based 3D visualization scene.",
+        "Client problem: engineering learners needed an interactive e-learning environment with technical content, events, assessments, chatbot support, and 3D visualization. My role: contributed to backend features, user workflows, integrations, and interactive learning modules. Technologies/areas: web application development, chatbot integration, 3D visualization, event/invitation workflows, and role-based learning flows. Result: delivered a richer learning platform for thermal and mechanical engineering users.",
       desc_de:
-        "Eine E-Learning-Plattform für thermische/mechanische Ingenieure, unterstützt von einem Chatbot und einer webbasierten 3D-Visualisierungsszene.",
+        "Kundenproblem: Lernende im Engineering-Bereich benötigten eine interaktive E-Learning-Plattform mit technischen Inhalten, Events, Bewertungen, Chatbot-Unterstützung und 3D-Visualisierung. Meine Rolle: Mitarbeit an Backend-Funktionen, Benutzerprozessen, Integrationen und interaktiven Lernmodulen. Technologien/Bereiche: Webentwicklung, Chatbot-Integration, 3D-Visualisierung, Event-/Einladungs-Workflows und rollenbasierte Lernprozesse. Ergebnis: Umsetzung einer umfangreicheren Lernplattform für thermische und mechanische Engineering-Themen.",
       id: "2",
       data: [
         {
@@ -446,10 +446,10 @@ const profileConfig = {
       date: "27-06-2021",
       type: "desktop",
       desc_en:
-        "The platform is a bridge between humans and robots, facilitating communication through user-friendly, intuitive interfaces. Users can design robot paths using a CAD model and view simulations in graphical form. The platform also provides visualization of robot and equipment models, enabling the extraction",
+        "Client problem: robotics users needed an intuitive desktop tool to design robot paths, visualize CAD-based models, and validate simulations before execution. My role: developed desktop software features, graphical interfaces, geometry processing workflows, and simulation-related functionality. Technologies/areas: C++, Qt, OpenCASCADE, CAD/STEP processing, robot path planning, multi-threading, and desktop UI development. Result: helped build a practical bridge between engineering users and robot simulation workflows.",
 
       desc_de:
-        "Die Plattform ist eine Brücke zwischen Menschen und Robotern und erleichtert die Kommunikation durch benutzerfreundliche, intuitive Benutzeroberflächen. Benutzer können Roboterpfade mithilfe eines CAD-Modells entwerfen und Simulationen in grafischer Form anzeigen. Die Plattform bietet auch eine Visualisierung von Roboter- und Ausrüstungsmodellen, die Extraktion ermöglicht.",
+        "Kundenproblem: Robotik-Anwender benötigten ein intuitives Desktop-Tool, um Roboterpfade zu entwerfen, CAD-basierte Modelle zu visualisieren und Simulationen vor der Ausführung zu prüfen. Meine Rolle: Entwicklung von Desktop-Funktionen, grafischen Benutzeroberflächen, Geometrie-Workflows und simulationsnaher Funktionalität. Technologien/Bereiche: C++, Qt, OpenCASCADE, CAD/STEP-Verarbeitung, Roboterpfadplanung, Multi-Threading und Desktop-UI. Ergebnis: Unterstützung beim Aufbau einer praxistauglichen Verbindung zwischen Engineering-Anwendern und Robotersimulation.",
       id: "3",
       name: "EASY-ROB",
       data: [
@@ -522,9 +522,9 @@ const profileConfig = {
       date: "27-01-2021",
       type: "desktop",
       desc_en:
-        "EASY-ROB™ Geo Assist is a tool to convert the neutral 3D data format STEP into the triangulated format IGP and STL",
+        "Client problem: robotics and CAD users needed a reliable converter from STEP files into triangulated simulation formats. My role: worked on geometry conversion workflows, desktop tooling, and practical export functionality. Technologies/areas: C++, Qt, OpenCASCADE, STEP processing, STL/IGP export, and CAD data handling. Result: delivered a tool that makes engineering models easier to prepare for robot simulation and visualization.",
       desc_de:
-        "EASY-ROB™ Geo Assist ist ein Tool zur Konvertierung des neutralen 3D-Datenformats STEP in das triangulierte Format IGP und STL",
+        "Kundenproblem: Robotik- und CAD-Anwender benötigten einen zuverlässigen Konverter von STEP-Dateien in triangulierte Simulationsformate. Meine Rolle: Arbeit an Geometrie-Konvertierung, Desktop-Tooling und praktischen Exportfunktionen. Technologien/Bereiche: C++, Qt, OpenCASCADE, STEP-Verarbeitung, STL/IGP-Export und CAD-Datenhandling. Ergebnis: Umsetzung eines Tools, mit dem Engineering-Modelle einfacher für Robotersimulation und Visualisierung vorbereitet werden können.",
       id: "4",
       name: "EASY-ROB Geo Assist – STEP file Converter",
       data: [
@@ -545,9 +545,9 @@ const profileConfig = {
       type: "mobile",
       id: "5",
       desc_en:
-        "An android application that tracks syrian pound in front of the other international currency",
+        "Client problem: users needed a simple mobile way to track Syrian pound exchange rates, precious metals, and currency conversions. My role: built Android app screens, data presentation flows, and user-friendly conversion features. Technologies/areas: Android/mobile development, currency data presentation, calculators, and mobile UI. Result: delivered a practical finance-information app for daily currency tracking.",
       desc_de:
-        "Eine Android-Anwendung, die den syrischen Pfund im Vergleich zu anderen internationalen Währungen verfolgt.",
+        "Kundenproblem: Nutzer benötigten eine einfache mobile Möglichkeit, Wechselkurse des syrischen Pfunds, Edelmetalle und Währungsumrechnungen zu verfolgen. Meine Rolle: Entwicklung von Android-App-Screens, Datenanzeige und benutzerfreundlichen Umrechnungsfunktionen. Technologien/Bereiche: Android-/Mobile-Entwicklung, Währungsdaten-Darstellung, Rechner und mobile UI. Ergebnis: Umsetzung einer praktischen Finanzinformations-App für die tägliche Währungsverfolgung.",
 
       name: "sp-stocks",
       data: [
@@ -602,9 +602,9 @@ const profileConfig = {
       type: "mobile",
       id: "6",
       desc_en:
-        "An android app for Emma-tell company which is a smart phones retailer that provides selling and after-sell service.",
+        "Client problem: a smartphone retailer needed a mobile product catalog and service app for customers. My role: developed mobile screens for devices, offers, accessories, comparisons, branches, profiles, notifications, and IMEI-related checks. Technologies/areas: Android/mobile UI, product catalog workflows, maps, filtering, comparison features, and customer-service flows. Result: delivered a customer-facing app that improves product browsing and after-sales support.",
       desc_de:
-        "Eine Android-App für das Unternehmen Emma-tell, einen Einzelhändler für Smartphones, der Verkaufs- und Kundendienstleistungen anbietet.",
+        "Kundenproblem: Ein Smartphone-Händler benötigte eine mobile Produktkatalog- und Service-App für Kunden. Meine Rolle: Entwicklung mobiler Screens für Geräte, Angebote, Zubehör, Vergleiche, Filialen, Profile, Benachrichtigungen und IMEI-bezogene Prüfungen. Technologien/Bereiche: Android-/Mobile-UI, Produktkatalog-Workflows, Karten, Filter, Vergleichsfunktionen und Kundenservice-Prozesse. Ergebnis: Umsetzung einer kundenorientierten App zur Verbesserung von Produktsuche und After-Sales-Support.",
 
       name: "Emma-tel",
       data: [
@@ -758,11 +758,11 @@ const profileConfig = {
     {
       date: "16-10-2023",
       type: "desktop",
-      name: "Sales of Point",
+      name: "Point of Sale System",
       desc_en:
-        "A desktop application for a company dealing with grain and seed trading. The application aims to organize products, generate invoices, and store the purchase history for each customer. Additionally, it has the ability to print invoices and convert them to PDF files.",
+        "Client problem: a grain and seed trading company needed a desktop system to organize products, manage customers, create invoices, and preserve purchase history. My role: built a practical desktop business application with invoice generation, printing, PDF export, and customer/product workflows. Technologies/areas: desktop application development, database-backed workflows, reporting, PDF generation, and business process automation. Result: reduced manual administration and gave the company a structured way to manage sales operations.",
       desc_de:
-        "Eine Desktop-Anwendung für ein Unternehmen, das mit Getreide- und Saatguthandel beschäftigt ist. Die Anwendung soll Produkte organisieren, Rechnungen erstellen und den Kaufverlauf für jeden Kunden speichern. Darüber hinaus verfügt sie über die Möglichkeit, Rechnungen auszudrucken und in PDF-Dateien umzuwandeln.",
+        "Kundenproblem: Ein Unternehmen für Getreide- und Saatguthandel benötigte ein Desktop-System zur Organisation von Produkten, Kundenverwaltung, Rechnungserstellung und Speicherung der Kaufhistorie. Meine Rolle: Entwicklung einer praktischen Desktop-Business-Anwendung mit Rechnungserstellung, Druckfunktion, PDF-Export sowie Kunden- und Produktprozessen. Technologien/Bereiche: Desktop-Entwicklung, datenbankgestützte Workflows, Reporting, PDF-Erstellung und Geschäftsprozess-Automatisierung. Ergebnis: Reduzierung manueller Verwaltung und strukturierte Unterstützung der Verkaufsprozesse.",
       id: "7",
       data: [
         {
@@ -853,9 +853,9 @@ const profileConfig = {
       type: "fullstack",
       name: "Mabsoot",
       desc_en:
-        "Events project in Beirut, help users to book an event, in addition, to create their own events, the event can be a party or any entertainment activities, in this project, I dealt with banking API, SMS API and images cloud hosting I used ASP.NET to build the backend and Flutter framework to make the mobile frontend",
+        "Client problem: event organizers and users in Beirut needed a mobile platform to create, discover, and book entertainment events. My role: built full-stack features across backend and mobile frontend, including booking flows, payment/banking API integration, SMS notifications, and cloud image handling. Technologies/areas: ASP.NET backend, Flutter mobile frontend, banking API, SMS API, image hosting, and event workflows. Result: delivered a complete event-booking application connecting organizers and customers.",
       desc_de:
-        "Eine Desktop-Anwendung für ein Unternehmen, das mit Getreide- und Saatguthandel beschäftigt ist. Die Anwendung soll Produkte organisieren, Rechnungen erstellen und den Kaufverlauf für jeden Kunden speichern. Darüber hinaus verfügt sie über die Möglichkeit, Rechnungen auszudrucken und in PDF-Dateien umzuwandeln.",
+        "Kundenproblem: Veranstalter und Nutzer in Beirut benötigten eine mobile Plattform zum Erstellen, Entdecken und Buchen von Entertainment-Events. Meine Rolle: Entwicklung von Full-Stack-Funktionen für Backend und mobile App, einschließlich Buchungsprozessen, Banking-/Payment-API-Integration, SMS-Benachrichtigungen und Cloud-Bildverwaltung. Technologien/Bereiche: ASP.NET-Backend, Flutter-Mobile-Frontend, Banking-API, SMS-API, Bildhosting und Event-Workflows. Ergebnis: Umsetzung einer vollständigen Event-Buchungsanwendung für Veranstalter und Kunden.",
       id: "9",
       data: [
         {
@@ -1143,34 +1143,10 @@ const profileConfig = {
       date: "7-16-2018",
       type: "fullstack",
       name: "Syria Shop",
-      desc_en: `
-      Shop Website supported by these features: 
-      1-  using three algorithms to make the recommendation system:
-        - collaborative filtering
-        -  content-based system
-        -  hybrid recommendation system (our own system), we made a new recommendation system by merging both algorithms above.
-      2- evaluation system (to ensure that our new recommendation system produces good results and determine the best recommendation algorithm. We distributed the three algorithms across Syria regions and developed an evaluation system to make a decision on the system to be used in all regions later on).
-      3- smart comment system (users can comment on products, and the owner of the product can determine the percentage of positive and negative comments using a circular chart without reading the comments).
-      4- independent banking system (in Syria, where there is no electronic payment option, we built our independent banking system to enable users to make purchases).
-      5- search engine (we developed our own search engine to help users easily find their desired products).
-      6- statistics (product owners can access various statistics about their products, such as profit depending on the time period, market share, client loyalty, top requested and most profitable products, profit depending on regions).
-      7- related products (when users view a product, they can see related products based on mathematical calculations of similarity between products).
-    
-    Finally, we used the waterfall process model to manage the project. This model is one of the plan-driven processes`,
-      desc_de: `
-      Shop-Website unterstützt von folgenden Funktionen:
-1- Verwendung von drei Algorithmen zur Erstellung des Empfehlungssystems:
-
-Kollaborative Filterung
-Inhaltsbasiertes System
-Hybrides Empfehlungssystem (unser eigenes System), wir haben ein neues Empfehlungssystem erstellt, indem wir beide oben genannten Algorithmen kombiniert haben.
-2- Evaluierungssystem (um sicherzustellen, dass unser neues Empfehlungssystem gute Ergebnisse liefert und den besten Empfehlungsalgorithmus ermitteln. Wir haben die drei Algorithmen auf die Regionen in Syrien verteilt und ein Evaluierungssystem entwickelt, um später eine Entscheidung über das System zu treffen, das in allen Regionen verwendet werden soll).
-3- Intelligentes Kommentarsystem (Benutzer können Produkte kommentieren, und der Produktbesitzer kann mithilfe eines Kreisdiagramms den Prozentsatz positiver und negativer Kommentare ohne das Lesen der Kommentare ermitteln).
-4- Unabhängiges Bankensystem (In Syrien gibt es keine elektronische Zahlungsmöglichkeit, daher haben wir unser unabhängiges Bankensystem entwickelt, um Benutzern den Kauf zu ermöglichen).
-5- Suchmaschine (Wir haben unsere eigene Suchmaschine entwickelt, um Benutzern dabei zu helfen, ihre gewünschten Produkte leicht zu finden).
-6- Statistiken (Produktbesitzer können verschiedene Statistiken über ihre Produkte abrufen, wie z.B. Gewinn abhängig von der Zeitspanne, Markanteil, Kundenloyalität, am häufigsten nachgefragte und profitabelste Produkte, Gewinn abhängig von Regionen).
-7- Verwandte Produkte (Wenn Benutzer ein Produkt ansehen, können sie ähnliche Produkte basierend auf mathematischen Berechnungen der Ähnlichkeit zwischen Produkten sehen).
-Abschließend haben wir das Wasserfall-Modell verwendet, um das Projekt zu verwalten. Dieses Modell ist eines der plangetriebenen Verfahren.`,
+      desc_en:
+        "Client problem: marketplace users needed an online shop with recommendations, product discovery, statistics, comments, and payment-like workflows in a market with limited electronic payment options. My role: designed and implemented full-stack e-commerce features including recommendation algorithms, evaluation workflows, smart comments, custom search, statistics dashboards, related products, and an independent banking flow. Technologies/areas: full-stack web development, recommendation systems, search, analytics, and custom transaction workflows. Result: delivered a feature-rich e-commerce platform with advanced discovery and business analytics features.",
+      desc_de:
+        "Kundenproblem: Marketplace-Nutzer benötigten einen Online-Shop mit Empfehlungen, Produktsuche, Statistiken, Kommentaren und zahlungsähnlichen Workflows in einem Markt mit eingeschränkten elektronischen Zahlungsmöglichkeiten. Meine Rolle: Konzeption und Umsetzung von Full-Stack-E-Commerce-Funktionen, darunter Empfehlungsalgorithmen, Evaluierungs-Workflows, intelligente Kommentare, eigene Suche, Statistik-Dashboards, verwandte Produkte und ein unabhängiger Banking-Flow. Technologien/Bereiche: Full-Stack-Webentwicklung, Empfehlungssysteme, Suche, Analytics und individuelle Transaktionsprozesse. Ergebnis: Umsetzung einer funktionsreichen E-Commerce-Plattform mit erweiterten Such-, Empfehlungs- und Business-Analytics-Funktionen.",
       id: "8",
       data: [
         {
