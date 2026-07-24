@@ -26,7 +26,7 @@ const ContactMeForm: FunctionComponent<ContactMeFormProps> = () => {
   const responsiveButtonContainerClass = isTabletOrMobile ? "uk-width-1-1" : "";
 
   return (
-    <div className="uuk-grid-column-small uk-text-center  uk-grid">
+    <div className="uk-grid-small uk-text-center uk-grid uk-width-1-1">
       {sent && (
         <div className="uk-width-1-1@s">
           <div className="animate__fadeIn animate__animated uk-alert-primary uk-display-inline-block uk-padding-small uk-border-rounded" uk-alert="">
