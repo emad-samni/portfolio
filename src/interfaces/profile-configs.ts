@@ -8,6 +8,11 @@ export interface ProfileConfigs {
   email: string;
   bio: string;
   skills_introduction: string;
+  services?: {
+    title: string;
+    description: string;
+  }[];
+  contact_call_to_action?: string;
   professions: string[];
   cvs: {
     type: string;

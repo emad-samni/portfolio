@@ -12,7 +12,7 @@ import AboutMeModalTrigger from "../../organisms/about-me-modal-trigger/about-me
 interface AboutMePageProps {}
 
 const AboutMePage: FunctionComponent<AboutMePageProps> = () => {
-  const { bio, skills_introduction } = profileConfig;
+  const { bio, skills_introduction, services } = profileConfig;
 
   const { isTabletOrMobile } = useResponsive();
 
@@ -45,8 +45,23 @@ const AboutMePage: FunctionComponent<AboutMePageProps> = () => {
                 paragraph={skills_introduction}
               />
             </div>
+            {!!services?.length && (
+              <div className="uk-margin-large-top animate__animated animate__fadeInUp" style={{ ...generateAnimationDelayStyle(1.7) }}>
+                <h6 className="uk-text-bold uk-text-large">{t("how_i_can_help")}</h6>
+                <div className="uk-grid-small uk-child-width-1-1 uk-child-width-1-2@m" uk-grid="">
+                  {services.map((service) => (
+                    <div key={service.title}>
+                      <div className="uk-card uk-card-default uk-card-body uk-border-rounded uk-box-shadow-small" style={{ minHeight: 170 }}>
+                        <h5 className="uk-text-bold uk-margin-small-bottom">{service.title}</h5>
+                        <p className="uk-margin-remove" style={{ fontSize: 16 }}>{service.description}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
             <div className="uk-margin-large-top">
-              <SkillSetList animationDelay={1.7} />
+              <SkillSetList animationDelay={2.0} />
             </div>
             <div className={`${responsiveFullWidthClass} uk-margin-large-top uk-display-inline-block animate__animated animate__fadeInUp`} style={{ ...generateAnimationDelayStyle(3.3) }}>
               <AboutMeModalTrigger />

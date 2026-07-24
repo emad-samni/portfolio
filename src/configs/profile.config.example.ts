@@ -44,12 +44,44 @@ const profileConfig = {
     "Softwareentwickler mit Sitz in Darmstadt, Deutschland, mit mehr als 5 Jahren Erfahrung in der Entwicklung von Webanwendungen, Backend-Systemen, APIs, Desktop-Tools, Docker-basierten Deployments und Microservice-Architekturen. Ich unterstütze Teams dabei, zuverlässige Software zu entwickeln, bestehende Systeme zu modernisieren, komplexe Probleme zu lösen und praxistaugliche Lösungen mit sauberem, wartbarem Code umzusetzen.",
 
   skills_introduction_en:
-    "My strongest areas are backend development, Docker, microservices, web applications, desktop software, databases, and practical system integration.",
+    "My strongest areas are backend development, Docker, microservices, web applications, desktop software, databases, and practical system integration. I focus on business value: stable APIs, reliable deployments, maintainable systems, and tools that reduce manual work.",
   skills_introduction_de:
-    "Meine stärksten Bereiche sind Backend-Entwicklung, Docker, Microservices, Webanwendungen, Desktop-Software, Datenbanken und praktische Systemintegration.",
+    "Meine stärksten Bereiche sind Backend-Entwicklung, Docker, Microservices, Webanwendungen, Desktop-Software, Datenbanken und praktische Systemintegration. Mein Fokus liegt auf praktischem Geschäftsnutzen: stabile APIs, zuverlässige Deployments, wartbare Systeme und Tools, die manuelle Arbeit reduzieren.",
 
   professions_en: ["Software Developer", "Backend Developer", "Docker & Microservices Engineer"],
   professions_de: ["Softwareentwickler", "Backend-Entwickler", "Docker- & Microservices-Entwickler"],
+
+  services: [
+    {
+      title_en: "Backend & API Development",
+      title_de: "Backend- & API-Entwicklung",
+      description_en: "Designing and building reliable APIs, backend services, data workflows, and integrations with clean, maintainable code.",
+      description_de: "Entwicklung zuverlässiger APIs, Backend-Services, Daten-Workflows und Integrationen mit sauberem, wartbarem Code.",
+    },
+    {
+      title_en: "Dockerization & Deployment",
+      title_de: "Dockerisierung & Deployment",
+      description_en: "Containerizing applications with Docker and Docker Compose, improving deployment reliability, and preparing practical setup documentation.",
+      description_de: "Containerisierung von Anwendungen mit Docker und Docker Compose, Verbesserung der Deployment-Zuverlässigkeit und Erstellung praxistauglicher Setup-Dokumentation.",
+    },
+    {
+      title_en: "Microservices & System Integration",
+      title_de: "Microservices & Systemintegration",
+      description_en: "Helping teams structure services, connect systems, solve integration issues, and modernize existing software step by step.",
+      description_de: "Unterstützung bei der Strukturierung von Services, Verbindung von Systemen, Lösung von Integrationsproblemen und schrittweiser Modernisierung bestehender Software.",
+    },
+    {
+      title_en: "Web & Desktop Applications",
+      title_de: "Web- & Desktop-Anwendungen",
+      description_en: "Building practical web applications, internal tools, dashboards, and desktop utilities for business workflows.",
+      description_de: "Entwicklung praktischer Webanwendungen, interner Tools, Dashboards und Desktop-Werkzeuge für Geschäftsprozesse.",
+    },
+  ],
+
+  contact_call_to_action_en:
+    "Available for freelance projects up to 20 hours per week. Contact me for backend/API work, Dockerization, microservices support, system maintenance, or internal business tools.",
+  contact_call_to_action_de:
+    "Verfügbar für freiberufliche Projekte bis zu 20 Stunden pro Woche. Kontaktieren Sie mich für Backend/API-Entwicklung, Dockerisierung, Microservices-Unterstützung, Systemwartung oder interne Business-Tools.",
 
   cvs: [
     {
