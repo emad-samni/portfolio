@@ -11,7 +11,17 @@ export const switchConfigByLanguage = (obj: ConfigObject, language: string, lang
       const regex = new RegExp(languagesToRemove.map((item) => "_" + item).join("|"), "gi");
       const key_without_language_suffix = current_key.replace(regex, "");
 
-      if (key_without_language_suffix + "_" + language === current_key || !languagesToRemove?.some((languageToRemove) => key_without_language_suffix + "_" + languageToRemove === current_key))
+      const requestedLanguageKey = key_without_language_suffix + "_" + language;
+      const fallbackLanguageKey = key_without_language_suffix + "_en";
+      const hasRequestedTranslation = Object.prototype.hasOwnProperty.call(obj, requestedLanguageKey);
+      const hasFallbackTranslation = Object.prototype.hasOwnProperty.call(obj, fallbackLanguageKey);
+      const isLanguageSpecificKey = languagesToRemove?.some((languageToRemove) => key_without_language_suffix + "_" + languageToRemove === current_key);
+
+      if (
+        requestedLanguageKey === current_key ||
+        (!hasRequestedTranslation && fallbackLanguageKey === current_key) ||
+        (!hasRequestedTranslation && !hasFallbackTranslation && !isLanguageSpecificKey)
+      )
         prev_value[key_without_language_suffix] = switchConfigByLanguage(obj[current_key], language, languagesToRemove) as any;
 
       return prev_value;
