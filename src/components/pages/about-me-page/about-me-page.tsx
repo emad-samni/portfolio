@@ -1,4 +1,4 @@
-import { FunctionComponent } from "react";
+import { FunctionComponent, useContext } from "react";
 import { useTranslation } from "react-i18next";
 import profileConfig from "../../../configs/profile.config";
 import { useResponsive } from "../../../hooks/responsiveness";
@@ -8,6 +8,8 @@ import HeaderParagraph from "../../molecules/header-paragraph/header-paragraph";
 import ImageWithBadge from "../../molecules/image-with-badge/image-with-badge";
 import SkillSetList from "../../molecules/skill-set-list/skill-set-list";
 import AboutMeModalTrigger from "../../organisms/about-me-modal-trigger/about-me-modal-trigger";
+import { FaCode, FaDocker, FaLayerGroup, FaTools } from "react-icons/fa";
+import { ThemeContext } from "../../providers/theme-provider";
 
 interface AboutMePageProps {}
 
@@ -17,6 +19,10 @@ const AboutMePage: FunctionComponent<AboutMePageProps> = () => {
   const { isTabletOrMobile } = useResponsive();
 
   const { t } = useTranslation();
+
+  const theme = useContext(ThemeContext);
+  const serviceCardThemeClass = theme?.theme === "dark" ? "service-card-dark" : "service-card-light";
+  const serviceIcons = [FaCode, FaDocker, FaLayerGroup, FaTools];
 
   const containerResponsiveClass = isTabletOrMobile ? "uk-flex-column-reverse uk-flex-middle" : "";
 
@@ -46,17 +52,30 @@ const AboutMePage: FunctionComponent<AboutMePageProps> = () => {
               />
             </div>
             {!!services?.length && (
-              <div className="uk-margin-large-top animate__animated animate__fadeInUp" style={{ ...generateAnimationDelayStyle(1.7) }}>
-                <h6 className="uk-text-bold uk-text-large">{t("how_i_can_help")}</h6>
+              <div className="services-section uk-margin-large-top animate__animated animate__fadeInUp" style={{ ...generateAnimationDelayStyle(1.7) }}>
+                <div className="services-section-heading">
+                  <span className="services-eyebrow">Services</span>
+                  <h6 className="uk-text-bold uk-text-large uk-margin-remove">{t("how_i_can_help")}</h6>
+                </div>
                 <div className="uk-grid-small uk-child-width-1-1 uk-child-width-1-2@m" uk-grid="">
-                  {services.map((service) => (
-                    <div key={service.title}>
-                      <div className="uk-card uk-card-default uk-card-body uk-border-rounded uk-box-shadow-small" style={{ minHeight: 170 }}>
-                        <h5 className="uk-text-bold uk-margin-small-bottom">{service.title}</h5>
-                        <p className="uk-margin-remove" style={{ fontSize: 16 }}>{service.description}</p>
+                  {services.map((service, index) => {
+                    const ServiceIcon = serviceIcons[index % serviceIcons.length];
+                    return (
+                      <div key={service.title}>
+                        <div className={`service-card ${serviceCardThemeClass}`}>
+                          <div className="service-card-topline" />
+                          <div className="service-card-header">
+                            <div className="service-card-icon">
+                              <ServiceIcon />
+                            </div>
+                            <span className="service-card-index">0{index + 1}</span>
+                          </div>
+                          <h5 className="service-card-title">{service.title}</h5>
+                          <p className="service-card-description">{service.description}</p>
+                        </div>
                       </div>
-                    </div>
-                  ))}
+                    );
+                  })}
                 </div>
               </div>
             )}
