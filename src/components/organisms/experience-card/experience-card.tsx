@@ -1,7 +1,5 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import { FunctionComponent, useContext } from "react";
-import { FaEye } from "react-icons/fa";
-import { useSoundEffects } from "../../../hooks/sounds-effects";
+import { FaArrowRight, FaCalendarAlt, FaFolderOpen } from "react-icons/fa";
 import { ThemeContext } from "../../providers/theme-provider";
 
 interface ExperienceCardProps {
@@ -10,46 +8,55 @@ interface ExperienceCardProps {
   title?: string;
   src?: string;
   name?: string;
+  date?: string;
+  type?: string;
+  ctaLabel?: string;
 }
 
+const formatDate = (date?: string) => {
+  if (!date) return undefined;
+  const [day, month, year] = date.split("-");
+  if (!day || !month || !year) return date;
+  return `${month}/${year}`;
+};
+
 const ExperienceCard: FunctionComponent<ExperienceCardProps> = (props) => {
-  const { onClick, item_id, name, src, title } = props;
+  const { onClick, name, src, title, date, type, ctaLabel } = props;
 
   const theme = useContext(ThemeContext);
-
-  const backgroundColorClass =
-    theme?.theme === "dark" ? "uk-overlay-primary" : "uk-overlay-default";
-
-  const aligh =
-    parseInt(item_id!) % 2 !== 0
-      ? "uk-card-media-left uk-cover-container"
-      : "uk-flex-last@s uk-card-media-right uk-cover-container";
-
-  const textClass = theme?.theme === "dark" ? "uk-light" : "";
-
-  const { playHoverSound } = useSoundEffects();
+  const themeClass = theme?.theme === "dark" ? "modern-project-card-dark" : "modern-project-card-light";
 
   return (
-    <div
-      className={`uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-flex portfolio-card ${backgroundColorClass} `}
-      uk-grid
-    >
-      <div className={`${aligh} portfolio-card-image`}>
-        <img src={src} alt="resource" style={{ height: "400px", objectFit: "cover", width: "100%" }} />
+    <article className={`modern-project-card portfolio-card ${themeClass}`}>
+      <div className="modern-project-media portfolio-card-image">
+        <img src={src} alt={`${name ?? "Portfolio item"} preview`} />
+        <div className="modern-project-media-overlay" />
+        {!!type && <span className="modern-project-type">{type}</span>}
       </div>
-      <div>
-        <div className="uk-card-body">
-          <h3 className={`${textClass}`}> {name}</h3>
-          <p className={`${textClass}`} style={{ whiteSpace: "pre-line" }}>
-            {title}
-          </p>
 
-          <button className="uk-button uk-button-danger" onClick={onClick}>
-            more details
-          </button>
+      <div className="modern-project-content">
+        <div className="modern-project-meta">
+          <span>
+            <FaFolderOpen />
+            {type ? type.replace("-", " ") : "portfolio"}
+          </span>
+          {!!formatDate(date) && (
+            <span>
+              <FaCalendarAlt />
+              {formatDate(date)}
+            </span>
+          )}
         </div>
+
+        <h3 className="modern-project-title">{name}</h3>
+        <p className="modern-project-description">{title}</p>
+
+        <button className="modern-project-button" onClick={onClick}>
+          <span>{ctaLabel ?? "View details"}</span>
+          <FaArrowRight />
+        </button>
       </div>
-    </div>
+    </article>
   );
 };
 

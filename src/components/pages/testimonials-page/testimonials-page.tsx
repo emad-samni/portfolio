@@ -1,7 +1,5 @@
 import { FunctionComponent } from "react";
 import { useTranslation } from "react-i18next";
-import { FaExclamationTriangle } from "react-icons/fa";
-import { capitalizeFirstLetter } from "../../../utils/text/text-manipulation";
 import profileConfig from "../../../configs/profile.config";
 import { generateAnimationDelayStyle } from "../../../utils/animation/animation";
 import SectionHeader from "../../molecules/contact-me-header/section-header";

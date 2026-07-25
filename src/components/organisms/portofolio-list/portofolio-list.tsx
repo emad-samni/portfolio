@@ -23,14 +23,17 @@ const PortofolioList: FunctionComponent<PortofolioListProps> = (props) => {
   const { handleShowPortofolioViewer } = useLogic();
 
   return (
-    <ul className="js-filter uk-child-width-1-1 uk-child-width-1-1@m uk-child-width-1-1@l uk-text-center">
+    <ul className="js-filter modern-project-grid uk-grid-small uk-child-width-1-1 uk-child-width-1-2@m uk-child-width-1-3@xl" uk-grid="">
       {contents.map((item) => (
-        <li key={item.date} data-date={item.date} data-stack={item.type}>
+        <li key={`${item.id}-${item.date}`} data-date={item.date} data-stack={item.type}>
           <ExperienceCard
             item_id={item.id}
             src={item.src}
             name={item.name}
             title={item.desc}
+            date={item.date}
+            type={show_form_projects ? item.type : "volunteering"}
+            ctaLabel={show_form_projects ? "View case study" : "View gallery"}
             onClick={() =>
               handleShowPortofolioViewer(
                 item.id,
