@@ -15,8 +15,7 @@ const LanguageSwitcher: FunctionComponent<LanguageSwitcherProps> = (props) => {
   const { languages } = appConfig;
   const langMenu: IItem[] = [
     { value: "en", label: "English", iconCode: "uk" },
-    { value: "de", label: "Deutsch", iconCode: "de" },
-    { value: "ar", label: "العربية", iconCode: "sa" },
+    { value: "de", label: "Deutch", iconCode: "de" },
     { value: "nl", label: "Dutch", iconCode: "nl" },
     { value: "fr", label: "French", iconCode: "fr" },
     { value: "se", label: "Swedish", iconCode: "se" },
